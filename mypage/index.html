@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marc Kevin Flores</title>
+</head>
+<style>
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #616161
+}
+    .my-case {
+    padding-right: 15px;
+    margin-right: auto;
+    padding-left: 15px;
+    margin-left: auto;
+}
+
+    .my-row {
+    margin-right: -15px;
+    margin-left: -15px;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+
+}
+    .cover {
+    background-color: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.125);
+    margin-top: 6rem;
+    border-radius: 0.25rem;
+    max-width: 50%;
+    
+}
+    section{
+    padding: 1.25rem;
+    height: auto
+    }
+    footer {   
+    padding: 0.75rem 1.25rem;
+    background-color: #f7f7f9;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+    header {
+    padding: 0.75rem 1.25rem;
+    background-color: #f7f7f9;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    background-color: #424242;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+    img {
+    padding: 0.25rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px solid white;
+    max-width: 100%;
+    height: auto;
+    width:150px;
+    height:150px;
+    margin-top:-12%;
+}
+    h3{
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    }
+    p {
+    color: #292b2c;
+    font-size: 0.95rem;
+    font-weight: 300;
+ 
+}
+
+</style>
+<body id="body">
+             <div class="my-case col-6 cover">
+                <header id="head">
+                  <div class="my-case">
+                      <div class="my-row">
+                           <img src="my-picture3.png">
+                           <h3 style="margin-left:10px; color:white">Hi, I'm Marc Kevin Flores in BT702E</h3>
+                      </div>
+                  </div>
+                </header>
+                 <section>
+                        <h3 style="text-align: center">My Introduction</h3>
+                    <p style="text-align: justify">My name is <b>Marc Kevin P. Flores</b> from Bagumbong Caloocan City, I am 4th Year Student in STI College Novaliches, course of Bachelor of Science in Information Technology and I am 19 years old. That's why I choose BSIT because I love technology especially to programming, I like to creating a different stuff and exploring. Why I choose STI College Novaliches because it's near to me and it's say there is a good opportunity for a job.</p>
+                 </section>
+                 <footer>
+                   <hr>
+                    <p style="text-align:right;font-style:italic;">created on 6/25/2018</p>
+                 </footer>
+             </div>
+             
+             <script>
+
+function randomColors() {
+    var bodyColor = ['#0288d1', '#e53935', '#ffea00', '#00e676','#616161','#ffab40','#e040fb']
+    var headColor = ['#0277bd', '#d32f2f', '#ffd600', '#00c853','#424242','#ff9100','#d500f9']
+    var random = Math.floor(Math.random() * bodyColor.length);
+    document.getElementById("body").style.backgroundColor= bodyColor[random];
+    document.getElementById("head").style.backgroundColor= headColor[random];
+    console.log(random)
+}
+setInterval(randomColors,2000);
+             </script>
+</body>
+</html>
